@@ -59,6 +59,22 @@
           null
         ]
       },
+      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/poros/book.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          11,
+          11,
+          11,
+          11,
+          null,
+          null
+        ]
+      },
       "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/services/geocode_service.rb": {
         "lines": [
           1,
@@ -142,22 +158,6 @@
           1,
           null,
           1,
-          10,
-          10,
-          null,
-          null
-        ]
-      },
-      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/poros/book.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          10,
-          10,
           10,
           10,
           null,
@@ -375,6 +375,6 @@
         ]
       }
     },
-    "timestamp": 1632763696
+    "timestamp": 1632764844
   }
 }
