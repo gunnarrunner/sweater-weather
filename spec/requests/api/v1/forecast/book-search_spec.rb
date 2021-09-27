@@ -19,7 +19,7 @@ RSpec.describe "book-search API", type: :request do
       # expect(forecasts[:data][:attributes][:hourly_weather].size).to eq(8)
     end
 
-    it 'gives an error with not sending params through', :vcr do
+    xit 'gives an error with not sending params through', :vcr do
       get '/api/v1/forecast'
       
       expect(response.status).to eq(400)
