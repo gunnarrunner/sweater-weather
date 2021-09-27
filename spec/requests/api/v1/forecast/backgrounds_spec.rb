@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe "Background API", type: :request do
 
   describe 'GET /backgrounds' do
-    it 'can give the forecast for a given location', :vcr do
+    xit 'can give the forecast for a given location', :vcr do
 
       get '/api/v1/backgrounds?location=denver,co'
       
