@@ -1,6 +1,11 @@
 class Api::V1::ForecastController < ApplicationController
   def index
-    require "pry"; binding.pry
+    if params[:location]
+      lat = GeocodeFacade.location(params[:location])[0].latitude
+      long = GeocodeFacade.location(params[:location])[0].longitude
+    else
+      json_error_response('Invalid Location', :bad_request)
+    end
   end
 
   # def show

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Merchants API", type: :request do
+RSpec.describe "Forecast API", type: :request do
 
   describe 'GET /forecast' do
     it 'can give the forecast for a given location', :vcr do
