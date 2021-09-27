@@ -3,8 +3,10 @@ class Api::V1::ForecastController < ApplicationController
     if params[:location]
       lat = GeocodeFacade.location(params[:location])[0].latitude
       long = GeocodeFacade.location(params[:location])[0].longitude
+      forecast = WeatherFacade.forecast(lat, long)
+      render json: ForecastSerializer.new(forecast)
     else
-      json_error_response('Invalid Location', :bad_request)
+      render :json => { :errors => 'Invalid Location' }, :status => 400
     end
   end
 

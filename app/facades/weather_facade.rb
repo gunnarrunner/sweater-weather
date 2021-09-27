@@ -20,4 +20,8 @@ class WeatherFacade
       HourlyWeather.new(hash)
     end
   end
+
+  def self.forecast(lat, long)
+    Forecast.new(current_weather(lat, long), daily_weather(lat, long), hourly_weather(lat, long))
+  end
 end

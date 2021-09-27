@@ -11,15 +11,18 @@ RSpec.describe "Forecast API", type: :request do
       
       forecasts = JSON.parse(response.body, symbolize_names: true)
 
-      # expect(merchants.class).to eq(Hash)
-      # expect(merchants[:data].class).to eq(Array)
-      
-      # expect(merchants[:data].count).to eq(20)
+      expect(forecasts.class).to eq(Hash)
+      expect(forecasts[:data][:attributes][:current_weather].class).to eq(Hash)
+      expect(forecasts[:data][:attributes][:daily_weather].class).to eq(Array)
+      expect(forecasts[:data][:attributes][:hourly_weather].class).to eq(Array)
+      expect(forecasts[:data][:attributes][:daily_weather].size).to eq(5)
+      expect(forecasts[:data][:attributes][:hourly_weather].size).to eq(8)
+    end
 
-      # merchants[:data].each do |merchant|
-      #   expect(merchant[:attributes]).to have_key(:name)
-      #   expect(merchant[:attributes][:name]).to be_a(String)
-      # end
+    it 'gives an error with not sending params through', :vcr do
+      get '/api/v1/forecast'
+      
+      expect(response.status).to eq(400)
     end
   end
 end
