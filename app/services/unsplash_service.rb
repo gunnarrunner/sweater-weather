@@ -3,7 +3,7 @@ class UnsplashService
     Faraday.new(url)
   end
 
-  def self.city_photo(location)
+  def self.get_photo(location)
     response = get_data("https://api.unsplash.com/search/photos").get do |f|
       f.params['client_id'] = ENV['unsplash_key']
       f.params['query'] = location

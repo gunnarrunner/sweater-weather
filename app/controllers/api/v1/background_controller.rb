@@ -1,6 +1,11 @@
 class Api::V1::BackgroundController < ApplicationController
   def index
-    # require "pry"; binding.pry
+   if params[:location]
+      background = UnsplashFacade.background(params[:location])
+      render json: UnsplashSerializer.photo_information(background)
+    else
+      render :json => { :errors => 'Invalid Location' }, :status => 400
+    end
   end
 
   # def show

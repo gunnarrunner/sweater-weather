@@ -28,6 +28,17 @@
           null
         ]
       },
+      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/facades/unsplash_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/facades/weather_facade.rb": {
         "lines": [
           1,
@@ -115,18 +126,18 @@
         "lines": [
           1,
           1,
-          0,
+          3,
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
-          0,
+          3,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
-          0,
+          3,
           null,
           null
         ]
@@ -160,6 +171,24 @@
           1,
           10,
           10,
+          null,
+          null
+        ]
+      },
+      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/poros/photo.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
           null,
           null
         ]
@@ -230,6 +259,77 @@
           null
         ]
       },
+      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/controllers/api/v1/background_controller.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/serializers/unsplash_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/controllers/api/v1/books_controller.rb": {
         "lines": [
           1,
@@ -268,12 +368,6 @@
           null,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/gunnarrunkle/turing/mod3/projects/sweater_weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
           null
         ]
       },
@@ -375,6 +469,6 @@
         ]
       }
     },
-    "timestamp": 1632764991
+    "timestamp": 1632781701
   }
 }
