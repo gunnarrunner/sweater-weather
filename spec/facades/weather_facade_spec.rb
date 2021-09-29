@@ -22,4 +22,11 @@ RSpec.describe WeatherFacade do
 
     expect(weather[0]).to be_an_instance_of(HourlyWeather)
   end
+
+  it 'can create a hourly forecast for all 48 hours', :vcr do
+    weather = WeatherFacade.forty_eight_hour_forecast(39.738453, -104.984853)
+
+    expect(weather[0]).to be_an_instance_of(FullHourlyWeather)
+    expect(weather.size).to eq(48)
+  end
 end

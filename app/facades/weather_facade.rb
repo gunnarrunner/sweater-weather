@@ -24,4 +24,12 @@ class WeatherFacade
   def self.forecast(lat, long)
     Forecast.new(current_weather(lat, long), daily_weather(lat, long), hourly_weather(lat, long))
   end
+
+  def self.forty_eight_hour_forecast(lat, long)
+    service = WeatherService.location(lat, long)
+    
+    service[:hourly].map do |hour|
+      FullHourlyWeather.new(hour)   
+    end
+  end
 end
