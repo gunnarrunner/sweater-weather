@@ -14,5 +14,16 @@ RSpec.describe GeocodeService do
         expect(service[:results][0][:locations][0]).to have_key(:latLng)
       end
     end
+
+    describe '.get_directions', :vcr do
+      it 'can get a response from mapquest' do
+        service = GeocodeService.get_directions('denver,co', 'pueblo,co')
+
+        
+        expect(service.class).to eq(Hash)
+        expect(service[:route].class).to eq(Hash)
+        expect(service[:route]).to have_key(:formattedTime)
+      end
+    end
   end
 end
