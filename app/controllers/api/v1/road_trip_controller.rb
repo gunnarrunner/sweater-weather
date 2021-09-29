@@ -11,7 +11,7 @@ class Api::V1::RoadTripController < ApplicationController
   # end
 
   def create
-    # require "pry"; binding.pry
+    require "pry"; binding.pry
     user = User.find_by(api_key: params[:api_key])
     if user && params[:origin].present? && params[:destination].present?
       road_trip = RoadTripFacade.destination_info(params[:origin], params[:destination])
